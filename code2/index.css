@@ -1,0 +1,296 @@
+/* 通用属性 */
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.clearfix:after{/*伪元素是行内元素 正常浏览器清除浮动方法*/
+  content: "";
+  display: block;
+  height: 0;
+  clear:both;
+  visibility: hidden;
+  overflow: hidden;
+}
+.clearfix{
+  zoom: 1;/*ie6清除浮动的方式 *号只有IE6-IE7执行，其他浏览器不执行*/
+}
+body {
+  max-width: 1920px;
+}
+.main {
+  width: 1200px;
+  margin: 0 auto;
+}
+.top {
+  width: 100%;
+  height: 106px;
+  /* box-sizing: border-box; */
+  border-top: 6px solid #066bb3;
+  border-bottom: 3px solid #066bb3;
+}
+.top > .logo {
+  position: relative;
+}
+.top > .logo > img {
+  margin-top: 10px;
+}
+.top > .logo > .content {
+  position: absolute;
+  top: 12px;
+  left: 94px;
+}
+.top > .logo > .content > p {
+  font-size: 35px;
+  font-weight: 700;
+}
+.top > .logo > .content > span {
+  font-size: 11px;
+}
+.top > .logo > .nav {
+  float: right;
+  line-height: 106px;
+  font-size: 0;
+  box-sizing: border-box;
+  /* height: 106px; */
+}
+.top > .logo > .nav span {
+  font-size: 14px;
+  border-left: 1px solid red;
+}
+.top > .logo > .nav li {
+  /* float: left; */
+  display: inline-block;
+  text-align: center;
+  padding-left: 18px;
+  padding-right: 18px;
+  font-size: 14px;
+  color: #666666；;
+}
+.top > .logo > .nav li:last-child {
+  border: none;
+}
+.top > .logo > .nav li:nth-child(5) {
+  background-color: #3788c2;
+}
+
+
+
+/* 中间的大图部分 */
+.slideshow {
+  width: 100%;
+  height: 540px;
+  background: url('./img/图层\ 43.jpg')  no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.slideshow .content {
+  text-align: center;
+}
+.slideshow p:first-child {
+  font-size: 45px;
+}
+.slideshow p:last-child{
+  font-size: 15px;
+}
+.slideshow .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+/* 内容详情页面 */
+.detail {
+  /* text-align: center; */
+  position: relative;
+  z-index: 100;
+  margin: 0 auto;
+  width: 1080px;
+  height: 340px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  border-top: 8px solid #066bb3;
+  margin-top: -104px;
+  padding-top: 20px;
+
+}
+.detail .left {
+  margin-left: 20px;
+  width: 265px;
+  float: left;
+}
+.detail .left .left-top a{
+  font-size: 16px;
+  color: #484848;
+  display: block;
+  line-height: 39px;
+  width: 265px;
+  border-bottom: 1px solid #484848;
+}
+.detail .left .left-top span {
+  font-size: 12px;
+}
+.detail .left-top img {
+  display: block;
+  margin: 10px 0;
+}
+.detail .left-top p {
+  font-size: 12px;
+  line-height: 24px;
+}
+.detail .left-top p>span{
+  color: #0c8fe1;
+}
+.detail .middle {
+  float: left;
+  display: block;
+  width: 480px;
+  height: 100px;
+  margin: 0 20px;
+}
+.detail .middle-top {
+  border-bottom: 1px solid #484848;
+}
+.detail .middle .middle-top a{
+  display: inline-block ;
+  width: 110px;
+  height: 39px;
+  text-align: center;
+  line-height: 39px;
+
+}
+.detail .middle .middle-top a:first-child {
+  background-color: #066bb3;
+    float: left;
+    position: relative;
+    margin-bottom: #066bb3;
+}
+/* 下面的小三角形未添加 */
+.detail .middle .middle-top a:first-child:before {
+    position: absolute;
+    content: '';
+    border-top: 7px solid #066bb3;
+    border-right: 9px solid transparent;
+    border-left: 9px solid transparent;
+    top: 40px ;
+    left: 40px;
+    z-index: 999;
+}
+.detail .middle .middle-top a:last-child {
+  background-color: #e5e5e5;
+
+}
+.middle-content {
+  margin-top: 10px;
+}
+.middle-content img {
+  display: block;
+  float: left;
+  margin-right: 15px;
+} 
+.middle-content h4 {
+  font-size: 14px;
+  color: #000000;
+  padding: 12px 3px;
+}
+.middle-content p {
+  font-size: 12px;
+  color: #999999;
+  line-height: 20px;
+}
+.middle-content p span {
+  color: #0c8fe1;
+}
+.middle-list {
+  display: block;
+  margin-top: 23px;
+  font-size: 12px;
+  color: #999999;
+}
+.middle-list li {
+  margin-bottom: 12px;
+  position: relative;
+}
+/* 问题  li标签前面的小点 */
+.middle-list li:before {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  top: 6px ;
+  background-color: #8b8b8b;
+  transform: rotate(45deg);
+}
+.middle-list li a  {
+  color: #999999;
+  padding-left: 10px;
+}
+.middle-list .time {
+  float: right;
+}
+.detail .right {
+  float: right;
+  padding-right: 10px;
+  display: block;
+  width: 265px;
+}
+.right .right-detail {
+  padding-top: 15px;
+}
+.detail .right .right-detail li{
+  font-size: 12px;
+  color: #666666;
+  line-height: 22px;
+}
+
+/* 底部部分 */
+.footer-top {
+  height: 30px;
+  background-color: #066bb3;
+}
+.footer-top>.main {
+  /* text-align: center; */
+    width: 1080px;
+    margin: 0 auto;
+    line-height: 30px;
+}
+.footer-top>.main>li {
+  display: inline;
+  color: #8bc9f5;
+  font-size: 12px;
+}
+.footer-top>.main>li:nth-child(n+2):not(:last-child) {
+  border-right: 1px solid #8b8b8b;
+  padding-right: 6px;
+  padding-left: 6px;
+}
+.footer-bottom {
+  height: 30px;
+  width: 1080px;
+  margin: 0 auto;
+  font-size: 12px;
+  color: #888888;
+  line-height: 30px;
+}
+.footer-bottom .left {
+  display: inline-block;
+  display: left;
+}
+.footer-bottom .left li:nth-child(n):not(:last-child) {
+  padding-right: 5px;
+  border-right: 1px solid #888888;
+  margin-right: 5px;
+}
+.footer-bottom .left>li {
+  display: inline;
+}
+.footer-bottom .right {
+  float: right;
+  display: inline-block;
+}

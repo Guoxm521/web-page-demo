@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+li  {   
+    list-style: none;
+}
+/* 清除浮动 */
+.clearfix:after  {
+    content: '.';
+    display: block;
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+    clear: both;
+}
+.clearfix {
+    zoom: 1;
+}
+/* 版心 */
+.main {
+    width: 1200px;
+    margin: 0 auto;
+}
+/* 头部部分 */
+.top {
+    height: 100px;   
+}
+
+.top>.left  {
+    float: left;
+}
+.top>.left>img {
+    display: inline-block;
+    margin-top: 17px;
+    margin-right: 12px;
+}
+.top>.left>.left-content {
+    color: #0d6fb8; 
+    /* line-height: 100px; */
+    /* text-align: center; */
+    float: right    ;
+}
+.top>.left>.left-content>p:first-child {
+    padding-top: 25px;
+    font-size: 30px;
+}
+.top>.left>.left-content>p:last-child {
+    font-size: 10px;
+}
+.top>.right {
+    float: right;
+    line-height: 100px;
+}
+.top>.right>img {
+    display: inline-block;
+    vertical-align: middle;
+    /* margin-right: 10px; */
+    background-color: #eba91b;
+}
+.top>.right>span {
+    font-size: 16px;
+    color: #eba91b;
+}
+
+/* 导航栏部分 */
+.nav {
+    height: 50px;
+    background-color: #0d6fb8;
+}
+.nav>.main>ul {
+    margin-left: 36px;
+}
+.nav>.main>ul>li {
+    line-height: 50px;
+    /* 此处为什么不生效 */
+    /* color: #ffffff; */
+    display: inline-block;
+    float: left;
+    padding:0 46px;
+}
+.nav>.main>ul>li>a {
+    color: #ffffff;
+}
+.nav>.main>.search {
+    width: 60px;
+    height: 50px;
+    background-color: #eba91b;
+    float: right;
+}
+.nav>.main>.search>img {
+    background-color: black;
+    /* margin: 12px; */
+    display: block;
+    margin: 13px auto;
+}
+
+/* 轮播图部分 */
+.slideshow {
+    width: 100%;
+    height: 420px;
+    background-color: pink;
+    position: relative;
+}
+.slideshow ul img {
+    width: 100%;
+    height: 420px;
+}
+.slideshow .slideshow-about {
+    position: absolute;
+    top: 172px;
+    left: 400px;
+}
+.slideshow .slideshow-about span {
+    padding-left: 15px;
+    display: block;
+}
+.slideshow .slideshow-about span:first-child {
+    display: block  ;
+    font-size: 50px;
+    height: 50px;   
+    line-height: 50px;
+    /* background-color: red; */
+    border-left: 10px solid #0d6fb8;
+}
+.slideshow .slideshow-about span:last-child {
+    font-size: 22px;
+    padding-top: 28px; 
+     border-left: 10px solid #eba91c;
+}
+ /* 注意伪元素在这里的话会产生偏差   主要是因为用了inline-block这一个属性  会产生空格和符号  */
+    /* 解决办法  这里是添加了一个浮动  还有一个办法是设置父元素字体大小为0 */
+    /* float: left; */
+/* .slideshow .slideshow-about span:before {
+   
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 50px;
+    line-height: 50px;
+    background-color: pink;
+    margin-right: 30px;
+} */
+/* .slideshow .slideshow-about span:first-child:before {
+    background-color: #0d6fb8;
+}
+.slideshow .slideshow-about span:last-child:before {
+    background-color: #eba91c;
+} */
+
+/* 中心部分 */
+.center {
+    position: relative;
+    width: 1200px;
+    padding-top: 60px ;
+}
+.center .left {
+    float: left;
+    width: 252px ;
+    margin-right: 55px;
+}
+.center .left .left-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+    height: 140px;
+    background-color: #0d6fb8;
+    color: #ffffff;
+    /* vertical-align: middle; */
+}
+.center .left-top p {
+    
+}
+.center .left .left-top P:first-child {
+    font-size: 36px;
+}
+.center .left .left-top p:last-child {
+    font-size: 18px;
+}
+
+.center .left-main li{
+    height: 60px;
+    display: block;
+    line-height: 60px;
+    box-sizing: border-box;
+    background-color: #f1f5f8;
+    border-bottom: 1px solid #ffffff;
+    font-size: 18px;
+    padding-left: 48px;
+}
+.center .left-main li:last-child {
+    color: #eba91c;
+}
+.center .left-main img {
+    padding-left: 96px;
+}
+
+.center .right span {
+    font-size: 24px;
+}
+.center .right .activity{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 34px;
+}
+.center .right .activity li {
+    flex: 1;
+    width: 280px;
+    /* height: 200px; */
+    justify-content: space-between;
+}
+.center .right ul li img {
+    display: block;
+    width: 280px;
+    height: 200px;
+}
+
+/* 照片下面的边距如何去掉 */
+.center .right ul li a {
+    margin: 0;
+    display: block;
+    font-size: 16px;
+    line-height: 60px;
+    text-align: center;
+}
+.center>.right>.page {
+    text-align: center;
+}
+.center>.right>.page li{
+    display: inline-block;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 14px;
+}
+.center>.right>.page li:nth-child(1),
+.center>.right>.page li:nth-child(2) {
+    margin-right: 16px;
+}
+.center>.right>.page li:nth-child(3),
+.center>.right>.page li:nth-child(4),
+.center>.right>.page li:nth-child(5),
+.center>.right>.page li:nth-child(6),
+.center>.right>.page li:nth-child(8) {
+    padding: 10px 25px;
+    background-color: #f1f5f8;
+
+}
+.center>.right>.page li:nth-child(7) {
+    margin-left: 16px;
+}
+/* 咨询部分 */
+.counsel {
+    position: absolute;
+    right: -230px;
+    top: 200px;
+    float: right;
+}
+.counsel li {
+    display: block;
+    width: 155px;
+    height: 54px;
+    background-color: pink;
+    border-radius: 27px;
+    text-align: center;
+    line-height: 54px;
+    font-size: 16px;
+}
+.counsel li>img {
+    vertical-align: middle;
+    padding-right: 5px;
+}
+.counsel li:nth-child(1) {
+    background-color: #f39801;
+}
+.counsel li:nth-child(2) {
+    margin: 10px 0 ;
+    background-color: #0d6fb8;
+} 
+.counsel li:nth-child(3) {
+    background-color: #f56f26;
+}
+.center .erweima {
+    position: absolute;
+    right: -136px;
+    top: 340px;
+    float: right;
+    width: 120px;
+    height: 120px;
+    border: 5px solid #f56f26;
+}
+.center .erweima img {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+/* 底端部分 */
+.footer {
+    width: 100%;
+    margin-top: 70px;
+    border-top: 5px solid #0d6fb8;
+    background-color: #ededed;
+}
+.footer>.content {
+    padding: 26px 0;
+}
+.footer>.content>ul {
+    display: inline-block;
+    vertical-align: text-top;
+    font-size: 14px;
+    margin-right: 60px;
+    color: #8f8f8f;
+}
+.footer>.content>ul li {
+    display: block;
+    line-height: 28px;
+}
+.footer>.content>ul li:first-child {
+    font-size: 18px;
+    color: black;
+    font-weight: 700;
+}
+.footer>.content>.contact {
+    margin-left: 25px;
+}
+.footer>.content>.contact li:nth-child(4) {
+    padding-top: 40px;
+}
+.footer>.content {
+    position: relative;
+}
+.footer>.content>.erweima {
+    position:absolute;
+    top:26px;
+    right: 0;
+}
