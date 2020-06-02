@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .father {
+        width: 1000px;
+        background-color: pink;
+      }
+      .son1 {
+        float: left;
+        background-color: red;
+      }
+      .son2 {
+        float: right;
+        background-color: green;
+      }
+      .clearfix:after {
+        content: "";
+        height: 0;
+        visibility: hidden;
+        clear: both;
+        display: block;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="father clearfix" >
+      <div class="son1">nihao</div>
+      <div class="son2">wohao</div>
+      <div style="clear: right;"></div>
+      ddd
+
+    </div>
+  </body>
+</html>

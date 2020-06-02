@@ -1,0 +1,300 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+body {
+  font-family: '微软雅黑';
+  font-size: 14px;
+}
+.clearfix:after {
+  content: '';
+  height: 0;
+  visibility: hidden;
+  clear: both;
+  display: block;
+  overflow: hidden;
+}
+.clearfix {
+  zoom: 1;
+}
+h3 {
+  font-size: 18px;
+  color: #345582;
+  padding-left: 8px;
+  border-left: 4px solid #345582;
+  margin-bottom: 20px;
+  float: left;
+}
+.header {
+  width: 100%;
+  height: 140px;
+  border-top: 23px solid #153162;
+  background-color: #f2f3f3;
+}
+.header .main {
+  width: 1080px;
+  margin: 0 auto;
+  height: 140px;
+}
+.header .main .logo {
+  display: inline-block;
+  height: 100%;
+  width: 380px;
+  background-color: red;
+  background: url('images/logo.jpg') 5px 24px no-repeat;
+  padding: 47px 0 0 80px;
+  box-sizing: border-box;
+  float: left;
+}
+.header .main .logo h1 {
+  font-size: 30px;
+}
+.header .main .logo h5 {
+  font-size: 13px;
+}
+.header .main .nav {
+  display: inline-block;
+  margin-left: 10px;
+}
+.header .main .nav li {
+  line-height: 140px;
+  display: inline-block;
+  padding: 0 15px;
+}
+.header .main .nav li a {
+  color: #393a3a;
+}
+.header .main .nav li a:hover {
+  color: #284986;
+}
+.slideshow {
+  width: 100%;
+  height: 402px;
+  background-color: #2e5ba9;
+}
+.slideshow .slideshow-main {
+  width: 1080px;
+  height: 100%;
+  margin: 0 auto;
+  background: url('images/slideshow.jpg') no-repeat;
+}
+.mainpart-box {
+  width: 100%;
+  background-color: #d6ebff;
+}
+.mainpart-box .mainpart {
+  background-color: #fff;
+  width: 1080px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+.mainpart-box .mainpart .top {
+  padding: 26px  0  30px 0;
+  margin: 0 27px 0 32px;
+  border-bottom: 1px solid #666666;
+}
+.mainpart-box .mainpart .top .company {
+  display: inline-block;
+  width: 370px;
+}
+.mainpart-box .mainpart .top .company h3 {
+  float: left;
+}
+.mainpart-box .mainpart .top .company a {
+  float: right;
+  color: #ffffff;
+  background-color: #003e8c;
+  font-size: 10px;
+  margin-top: 13px;
+}
+.mainpart-box .mainpart .top .company img {
+  display: block;
+  margin-bottom: 15px;
+}
+.mainpart-box .mainpart .top .company p {
+  font-size: 12px;
+  color: #666666;
+  line-height: 20px;
+  text-indent: 2rem;
+  padding: 0 7px;
+}
+.mainpart-box .mainpart .top .conduct {
+  width: 335px;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 32px;
+}
+.mainpart-box .mainpart .top .conduct a {
+  float: right;
+  color: #ffffff;
+  background-color: #003e8c;
+  font-size: 10px;
+  margin-top: 13px;
+}
+.mainpart-box .mainpart .top .news {
+  display: inline-block;
+  width: 238px;
+  box-sizing: border-box;
+  vertical-align: top;
+  margin-left: 32px;
+}
+.mainpart-box .mainpart .top .news .more {
+  float: right;
+  color: #ffffff;
+  background-color: #003e8c;
+  font-size: 10px;
+  margin-top: 13px;
+}
+.mainpart-box .mainpart .top .news ul {
+  display: block;
+  width: 238px;
+  height: 204px;
+  box-sizing: border-box;
+  border: 1px solid #003e8c;
+  padding: 20px 0 0 21px;
+}
+.mainpart-box .mainpart .top .news ul li {
+  width: 100%;
+  font-size: 12px;
+  list-style: disc;
+  margin-bottom: 10px;
+}
+.mainpart-box .mainpart .middle {
+  margin-top: 26px;
+  margin-left: 32px;
+  margin-right: 27px;
+  border-bottom: 1px solid #666666;
+}
+.mainpart-box .mainpart .middle .case {
+  float: left;
+  width: 741px;
+}
+.mainpart-box .mainpart .middle .case .more {
+  float: right;
+  color: #ffffff;
+  background-color: #003e8c;
+  font-size: 10px;
+  margin-top: 13px;
+}
+.mainpart-box .mainpart .middle .case ul {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.mainpart-box .mainpart .middle .case ul li {
+  display: block;
+  width: 247px;
+  box-sizing: border-box;
+  margin-bottom: 26px;
+}
+.mainpart-box .mainpart .middle .case ul li a {
+  display: block;
+}
+.mainpart-box .mainpart .middle .case ul li a img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.mainpart-box .mainpart .middle .case ul li a h4 {
+  font-size: 12px;
+  color: #333333;
+  text-align: center;
+}
+.mainpart-box .mainpart .middle .case ul li a h5 {
+  font-size: 12px;
+  color: #999999;
+  text-align: center;
+}
+.mainpart-box .mainpart .middle .solution {
+  width: 238px;
+  float: right;
+}
+.mainpart-box .mainpart .middle .solution .more {
+  float: right;
+  color: #ffffff;
+  background-color: #003e8c;
+  font-size: 10px;
+  margin-top: 13px;
+}
+.mainpart-box .mainpart .middle .solution ul {
+  display: block;
+  width: 238px;
+  height: 386px;
+  box-sizing: border-box;
+  border: 1px solid #003e8c;
+  padding: 20px 0 0 21px;
+}
+.mainpart-box .mainpart .middle .solution ul li {
+  width: 100%;
+  font-size: 12px;
+  list-style: disc;
+  margin-bottom: 10px;
+}
+.mainpart-box .mainpart .bottom {
+  margin-top: 26px;
+  margin-left: 32px;
+  margin-right: 27px;
+}
+.mainpart-box .mainpart .bottom .product {
+  width: 741px;
+  float: left;
+}
+.mainpart-box .mainpart .bottom .product .more {
+  float: right;
+  color: #ffffff;
+  background-color: #003e8c;
+  font-size: 10px;
+  margin-top: 13px;
+}
+.mainpart-box .mainpart .bottom .product ul {
+  display: flex;
+}
+.mainpart-box .mainpart .bottom .product ul li {
+  width: 25%;
+  flex: 1;
+}
+.mainpart-box .mainpart .bottom .product ul li a {
+  display: block;
+}
+.mainpart-box .mainpart .bottom .product ul li a img {
+  display: block;
+  margin: 0 auto;
+}
+.mainpart-box .mainpart .bottom .product ul li a span {
+  display: block;
+  text-align: center;
+  margin-top: 5px;
+}
+.mainpart-box .mainpart .bottom .link {
+  width: 238px;
+  float: right;
+}
+.mainpart-box .mainpart .bottom .link a {
+  float: right;
+  color: #ffffff;
+  background-color: #003e8c;
+  font-size: 10px;
+  margin-top: 13px;
+}
+.mainpart-box .mainpart .bottom .link img {
+  margin-bottom: 10px;
+}
+.mainpart-box .mainpart .bottom .link li {
+  font-size: 12px;
+  line-height: 20px;
+}
+.footer {
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  background-color: #203e73;
+  color: #a9b0c1;
+  font-size: 12PX;
+}

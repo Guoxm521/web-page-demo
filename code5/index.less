@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+body {
+    font-family: '微软雅黑';
+    font-size: 14px;
+}
+.clearfix:after {
+    content: '';
+    height: 0;
+    visibility: hidden;
+    clear: both;
+    display: block;
+    // 将盒子恢复文档流
+    overflow: hidden;
+}
+.clearfix {
+    zoom: 1;
+}
+// 中间主要部分标题
+h3 {
+    font-size: 18px;
+    color: #345582;
+    padding-left: 8px;
+    border-left: 4px solid #345582;
+    margin-bottom: 20px;
+    float: left;
+}
+// 头部部分
+.header {
+    width: 100%;
+    height: 140px;
+    border-top: 23px solid #153162;
+    background-color: #f2f3f3;
+    
+    .main {
+        width: 1080px;
+        margin: 0 auto;
+        height: 140px;
+
+        .logo {
+            display: inline-block;
+            height: 100%;
+            width: 380px;
+            background-color: red;
+            background: url('./images/logo.jpg') 5px 24px  no-repeat ;
+            padding: 47px 0 0 80px;
+            box-sizing: border-box;
+            float: left;
+            h1 {
+                font-size: 30px;
+            }
+            h5 {
+                font-size: 13px;
+            }
+        }
+        .nav {
+            display: inline-block;
+            margin-left: 10px;
+            li {
+                line-height: 140px;
+                display: inline-block;
+                padding: 0 15px;
+                a{
+                    color: #393a3a;
+                    &:hover {
+                        color: #284986;
+                    }
+                }
+            }
+        }
+    }
+}
+// 轮播图部分
+.slideshow {
+    width: 100%;
+    height: 402px;
+    background-color: #2e5ba9;
+    .slideshow-main {
+        width: 1080px;
+        height: 100%;
+        margin: 0 auto;
+        background: url('./images/slideshow.jpg') no-repeat;
+    }
+}
+// 中间主要部分
+.mainpart-box {
+    width: 100%;
+    background-color: #d6ebff;
+    .mainpart {
+        background-color: #fff;
+        width: 1080px;
+        margin: 0 auto;
+        padding-bottom: 30px;
+        // 公司简介一栏
+        .top {
+            padding: 26px  0  30px 0;
+            margin:0 27px 0 32px;
+            border-bottom: 1px solid #666666;
+            .company {
+                display: inline-block;
+                width: 370px;
+                h3 {
+                    float: left;
+                }
+                a{
+                    float: right;
+                    color: #ffffff;
+                    background-color: #003e8c;
+                    font-size: 10px;
+                    margin-top: 13px;
+                }
+                img {
+                    display: block;
+                    margin-bottom: 15px;
+                }
+                p {
+                    font-size: 12px;
+                    color: #666666;
+                    line-height: 20px;
+                    text-indent: 2rem;
+                    padding: 0 7px;
+                }
+            }
+            .conduct {
+                width: 335px;
+                display: inline-block;
+                vertical-align: top;
+                margin-left: 32px;
+                a{
+                    float: right;
+                    color: #ffffff;
+                    background-color: #003e8c;
+                    font-size: 10px;
+                    margin-top: 13px;
+                }
+            }
+            .news {
+                display: inline-block;
+                width: 238px;
+                box-sizing: border-box;
+                vertical-align: top;
+                margin-left: 32px;
+                .more {
+                    float: right;
+                    color: #ffffff;
+                    background-color: #003e8c;
+                    font-size: 10px;
+                    margin-top: 13px;
+                }
+                ul {
+                    display: block;
+                    width: 238px;
+                    height: 204px;
+                    box-sizing: border-box;
+                    border: 1px solid #003e8c;
+                    padding: 20px 0 0 21px;
+                    li {
+                        width: 100%;
+                        font-size: 12px;
+                        list-style:disc;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+        // 经典案例一栏
+        .middle {
+            margin-top: 26px;
+            margin-left: 32px;
+            margin-right: 27px;
+            border-bottom: 1px solid #666666;
+            .case {
+                float: left;
+                width: 741px;
+                .more {
+                    float: right;
+                    color: #ffffff;
+                    background-color: #003e8c;
+                    font-size: 10px;
+                    margin-top: 13px;
+                }
+                ul {
+                    display: flex;
+                    width: 100%;
+                    flex-wrap: wrap;
+                    li {
+                        display: block;
+                        width: 247px;
+                        box-sizing: border-box;
+                        margin-bottom: 26px;
+                        a {
+                            display: block;
+                            img {
+                                display: block;
+                                margin: 0 auto;
+                                margin-bottom: 10px;
+                            }
+                            h4 {
+                                font-size: 12px;
+                                color: #333333;
+                                text-align: center;
+                            }
+                            h5 {
+                                font-size: 12px;
+                                color: #999999;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+            .solution {
+                width: 238px;
+                float: right;
+                .more {
+                    float: right;
+                    color: #ffffff;
+                    background-color: #003e8c;
+                    font-size: 10px;
+                    margin-top: 13px;
+                }
+                ul {
+                    display: block;
+                    width: 238px;
+                    height: 386px;
+                    box-sizing: border-box;
+                    border: 1px solid #003e8c;
+                    padding: 20px 0 0 21px;
+                    li {
+                        width: 100%;
+                        font-size: 12px;
+                        list-style:disc;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+        // 公司产品一栏
+        .bottom{
+            margin-top: 26px;
+            margin-left: 32px;
+            margin-right: 27px;
+            .product {
+                width: 741px;
+                float: left;
+                .more {
+                    float: right;
+                    color: #ffffff;
+                    background-color: #003e8c;
+                    font-size: 10px;
+                    margin-top: 13px
+                }
+                ul {
+                    display: flex;
+                    li {
+                       width: 25%;
+                       flex: 1;
+                       a {
+                           display: block;
+                           img {
+                                display: block;
+                                margin: 0 auto;
+                           }
+                           span {
+                               display: block;
+                               text-align: center;
+                               margin-top: 5px;
+                           }
+                       }
+                    }
+                }
+            }
+            .link {
+                width: 238px;
+                float: right;
+                a {
+                    float: right;
+                    color: #ffffff;
+                    background-color: #003e8c;
+                    font-size: 10px;
+                    margin-top: 13px
+                }
+                img {
+                    margin-bottom: 10px;
+                }
+                li {
+                    font-size: 12px;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+}
+
+// 底部部分 
+.footer {
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    background-color: #203e73;
+    color: #a9b0c1;
+    font-size: 12PX;
+}
