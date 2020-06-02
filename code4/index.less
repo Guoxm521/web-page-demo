@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.clearfix:after {
+    content: '';
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+.clearfix {
+    zoom: 1;
+}
+
+.header {
+  height: 100px;
+  background-color: #191919;
+//   background-color: pink;
+
+  .main {
+    width: 1120px;
+    margin: 0 auto;
+    height: 100%;
+    // logo部分
+    .logo {
+        float: left;
+      width: 90px;
+      height: 100%;
+      background-color: red;
+      background: url("./images/07红妆-设计团队详情页_03.jpg") no-repeat;
+      background-position: 0px 5px;
+    }
+    // nav导航部分
+    .nav {
+        float: left;
+        line-height: 100px;
+        margin-left:6px ;
+        font-size: 0;
+      a {
+        display: inline-block;
+        padding-left: 14px;
+        padding-right: 14px;
+        font-size: 14px;
+        color: #cccccc;
+        &:hover {
+            background-color: #262626;
+        }
+      }
+    }
+    // tel联系部分
+    .tel {
+        float: left;
+        width: 140px;
+        height: 100px ;
+        background: url('./images/07红妆-设计团队详情页_06.png') no-repeat 0 36px ;
+        background-size: 140px  ;
+        line-height: 100px ;
+    }
+
+  }
+}
+
+// 主图部分
+.imagepart {
+    height: 268px;
+    width: 100%;
+    background-color: pink;
+    background: url('images/图层\ 105.png') center no-repeat ;
+
+    .mask {
+        width: 100%;
+        height: 268px;
+        background-color: #987c55;
+        opacity: 0.3;
+    }
+}
+
+// 内容详情部分
+.team {
+    width: 1120px;
+    margin: 0 auto;
+    margin-top: -85px;
+    margin-bottom: 95px;
+    .left {
+        float: left;
+        width: 229px;
+        display: inline-block;
+        margin-right: 30px;
+    }
+    .right {
+        float: left;
+        width: calc(100% - 259px);
+        .right-title-en {
+            h1 {
+                font-size: 48px;
+                padding: 15px 0;
+                color: #ffffff;
+            }
+        }
+        .right-title-ch {
+            // float: left;
+            padding-bottom: 6px;
+            border-bottom: 1px solid #cccccc;
+            h1 {
+                display: inline;
+                color: #000000;
+            }
+            span {
+                float: right;
+                display: inline-block;
+                padding-top: 20px;
+                padding-right: 10px;
+                color: #999999;
+                font-size: 14px;
+            }
+        }
+        .introduction {
+            margin-top: 52px;
+            img {
+                float: left;
+                width: 294px;
+                box-sizing: border-box;
+                padding:10px;
+                border: 1px solid #cccccc;
+            }
+            table {
+                float: right;
+                width: 534px;
+                margin: 28px 0 20px 30px;
+                th {
+                    font-size: 24px;
+                    vertical-align: baseline;
+                    width: 72px;
+                }
+                
+                td {
+                    &:last-child {
+                        color: #cccccc;
+                    }
+                    font-size: 14px;
+                    line-height: 28px;
+                    text-align: top ;
+                }
+                }
+            }
+        }
+        .seek {
+            float: right;
+            margin-right: 120px;
+            margin-top: 30px;
+            a {
+                display: inline-block;
+                width: 130px;
+                height: 50px;
+                line-height: 50px;
+                margin-right: 15px;
+                background-color: #f7f7f7;
+                background-image: url('./images/图层\ 143.png');
+                background-repeat: no-repeat;
+                background-size: 20px  ;
+                background-position: 7px 18px;
+                text-align: center;
+            }    
+        }
+        .works {
+            .title-h2 {
+                margin-top: 20px ;
+                padding-left: 10px;
+                padding-bottom: 5px;
+                border-bottom: 1px solid #666666;
+                font-size: 24px;
+            }
+            ul {
+                margin-top: 19px;
+                margin-left: 30px;
+                li {
+                    display: inline-block;
+                    width: 160px;
+                    height: 120px;
+                    margin-right: 10px;
+                    position: relative;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                    span {
+                        position: absolute;
+                        display: block;
+                        width: 100%;
+                        line-height: 32px;
+                        text-align: center;
+                        bottom: 0;
+                        background-color: #0c0904;
+                        opacity: 0.5;
+                        color:#ffffff;
+
+                    }
+                }
+            }
+        }
+    }
+
+    // 底部部分
+    .footer {
+        height: 200px;
+        background-color: #191919;
+        .footer-main {
+            width: 1120px;
+            margin: 0 auto;
+            height: 100%;
+            .logo {
+                float: left;
+                width: 160px;
+                height: 100%;
+                background: url('./images/07红妆-设计团队详情页_11.png') no-repeat;
+                background-position: 10px 33px;
+            }
+            .middle {
+                width: calc(100% - 160px - 129px);
+                float: left;
+                text-align: center;
+                margin-top: 76px;
+                ul {
+                    li {
+                        display: inline;
+                        a {
+                            padding: 0 6px;
+                            color: #ffffff;
+                            font-size: 14px;
+                        }
+                    }
+                    &:first-child {
+                        margin-bottom: 25px;
+                    }
+                    &:nth-child(n):not(:nth-child(1)) {
+                        li a {
+                            font-size: 12px ;
+                        }
+                    }
+                }
+            }
+            .erweima {
+                float: right;
+                width: 129px;
+                height: 100%;
+                background-color: green;
+                background: url('./images/图层\ 171.png') no-repeat;
+                background-position: 0 33px ;
+            }
+        }
+    }
+    // .footer-main .middle ul li {
+    //     display: inline;
+    // }
+    // .footer-main .middle {
+    //     margin-left: 170px;
+    //     width: 800px;
+    //     text-align: center;
+    //     margin-top: 76px;
+    // }
+    // .footer-main>.middle>ul>li>a {
+    //     padding: 0 6px;
+    //     color: #ffffff;
+    // }
+    // .footer-main .middle ul:first-child {
+    //     margin-bottom: 25px;
+    //     font-size: 14px;
+    //     color: #ffffff;
+    // }
