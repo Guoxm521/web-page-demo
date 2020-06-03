@@ -1,0 +1,386 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: "微软雅黑";
+  font-size: 14px;
+}
+.main {
+  width: 1000px;
+  margin: 0 auto;
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
+// 头部部分
+.header {
+  height: 117px;
+  .header-main {
+    margin: 0 auto;
+    width: 1000px;
+    .header-left {
+      display: block;
+      width: 370px;
+      height: 64px;
+      float: left;
+      background: url("./images/logo.jpg") no-repeat;
+      text-align: center;
+      margin-top: 34px;
+      margin-left: 26px;
+      span {
+        font-size: 14px;
+      }
+    }
+    .header-right {
+      float: right;
+      margin: 40px 16px 0 0;
+      ul {
+        li {
+          display: inline-block;
+          font-size: 12px;
+          vertical-align: middle;
+        }
+        span {
+          font-size: 12px;
+        }
+        text-align: right;
+        margin-bottom: 5px;
+      }
+      .tel {
+        font-size: 18px;
+        display: block;
+        background: -webkit-linear-gradient(top, #ffab01, #ff6d01);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+      }
+    }
+  }
+}
+// 导航部分
+.nav {
+  height: 43px;
+  width: 100%;
+  background: -webkit-linear-gradient(top, #2e90e2, #0c58a2);
+  .nav-main {
+    display: flex;
+    height: 43px;
+    width: 1000px;
+    margin: 0 auto;
+    line-height: 43px;
+    font-size: 0;
+    li {
+      flex: 1;
+      text-align: center;
+      margin: 8px 10px;
+      line-height: 28px;
+      font-size: 14px;
+      a {
+        color: #ffffff;
+        display: block;
+        border: 1px solid transparent;
+        &:hover {
+          background-color: #ffffff;
+          border: 1px solid #81bbea;
+          color: #81bbea;
+        }
+      }
+    }
+    span {
+      color: #ffffff;
+      font-size: 14px;
+    }
+  }
+}
+// 轮播图部分
+.slideshow {
+  img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+  ul {
+    display: block;
+    height: 48px;
+    background-color: #f5f5f5;
+    text-align: center;
+    line-height: 48px;
+    border-bottom: 1px solid #e2e2e2;
+    li {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background-color: #fff;
+      border-radius: 6px;
+      border: 1px solid #aeaeae;
+      margin: 0 3px;
+    }
+    .current {
+      background-color: #96bf29;
+    }
+  }
+}
+.title-h3 {
+  h3 {
+    font-size: 16px;
+    color: #b0b0b0;
+    span {
+      margin-left: 8px;
+      font-size: 12px;
+      color: #7c7c7c;
+    }
+    a {
+      font-size: 10px;
+      color: #7c7c7c;
+      float: right;
+      height: 18px;
+      width: 60px;
+      background-color: #efefef;
+      text-align: center;
+      line-height: 18px;
+      border: 1px solid #e4e4e5;
+      border-radius: 9px;
+      &:before {
+        content: "";
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        border: 1px solid #43b7ec;
+        background-color: #9fd9f6;
+        border-radius: 4px;
+        vertical-align: middle;
+        margin-right: 5px;
+      }
+    }
+  }
+}
+// 中间介绍部分
+.top {
+  height: 260px;
+  border-bottom: 1px solid #b0b0b0;
+  padding-bottom: 30px;
+  .topmain {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 23px 26px;
+    height: 100%;
+    .left {
+      float: left;
+      width: 313px;
+      padding-right: 30px;
+      border-right: 1px solid #666666;
+      img {
+        margin-top: 20px;
+        margin-bottom: 18px;
+      }
+      p {
+        font-size: 12px;
+        line-height: 24px;
+        color: #666666;
+        text-indent: 2rem;
+      }
+    }
+    .middle {
+      float: left;
+      width: 300px;
+      height: 239px;
+      margin-left: 30px;
+      padding-right: 30px;
+      border-right: 1px solid #666666;
+      .middle-title {
+        margin-top: 14px;
+        margin-bottom: 14px;
+        h4 {
+          font-size: 12px;
+          color: #0177bd;
+          line-height: 24px;
+        }
+        p {
+          font-size: 12px;
+          color: #666666;
+          line-height: 24px;
+          a {
+            color: #2e90e2;
+          }
+        }
+      }
+      ul {
+        li {
+          font-size: 12px;
+          color: #666666;
+          list-style: disc;
+          margin-bottom: 12px;
+          margin-left: 12px;
+          span {
+            float: right;
+          }
+        }
+      }
+    }
+    .right {
+      float: left;
+      width: 220px;
+      margin-left: 30px;
+      ul {
+        margin-top: 15px;
+      }
+      li {
+        img {
+          vertical-align: middle;
+        }
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        background-color: #e3e2e2;
+        border-radius: 10px;
+        font-size: 18px;
+        color: #666666;
+        margin-bottom: 10px;
+        border: 1px solid #f1edee;
+      }
+    }
+  }
+}
+// 名师  学员风采部分
+.bottom {
+  background-color: #f6f6f6;
+  .bottom-main {
+    width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    .teacher {
+      padding: 28px 14px 40px 14px;
+      ul {
+        margin-top: 35px;
+        display: flex;
+        justify-content: space-between;
+        li {
+          text-align: center;
+          img {
+            display: block;
+            padding: 2px;
+            border: 2px solid #ffffff;
+            box-shadow: #aeaeae 0 0 15px 8px;
+          }
+          p {
+            margin-top: 16px;
+            font-size: 14px;
+            color: #393939;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+    .student {
+        position: relative;
+        .title-h3 {
+            height: 28px;
+            line-height: 28px;
+            background-color: #49aeea;
+            border: 1px solid #aeaeae;
+            border-radius: 5px;
+            
+            h3 {
+                padding-left: 5px;
+                color: #ffffff;
+            }
+            span {
+                font-size: 16px;
+                color: #fff;
+            }
+            a {
+                margin-top: 4px;
+                margin-right: 15px;
+            }
+        }
+        ul {
+            width: 930px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            text-align: center;
+            p {
+                margin-top: 16px;
+                font-size: 14px;
+                font-weight: 600;
+            }
+        }
+        .imgleft {
+            position: absolute;
+            top: 82px;
+        }
+        .imgright {
+            position: absolute;
+            right: 0;
+            top: 82px;
+        }
+    }
+  }
+}
+
+// 底部footer部分
+.footer {
+    background-color: #383838;
+    // background-color: pink;
+    .footermain {
+        width: 1000px;
+        margin: 0 auto;
+        padding: 50px 50px 20px 50px;
+        .left {
+            float: left;
+            width: 372px;
+            height: 150px;
+            background-color: red;
+            padding-top: 15px;
+            background: url('./images/erweima.jpg') no-repeat;
+            p {
+                text-align: left;
+                padding-left: 190px;
+                font-size: 24px;
+                padding-top: 5px;
+                font-style: italic;
+                color: #f6f6f6;
+            }
+        }
+        .right {
+            margin-left: 100px;
+            width: 500px;
+            float: right;
+            li {
+                &:first-child {
+                    font-size: 16px;
+                    color: #fff;
+                    margin-bottom: 8px;
+                }
+                &:nth-child(n):not(:first-child) {
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #e3e2e2;
+                }
+            }
+        }
+    }
+    .last {
+        text-align: center;
+        line-height: 40px;
+        font-size: 14px;
+        background-color: #121212;
+        color: #8b8b8b;
+    }
+}
