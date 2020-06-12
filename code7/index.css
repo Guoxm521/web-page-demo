@@ -100,8 +100,8 @@ footer {
   width: 100%;
   height: 95px;
   background-color: #000000;
-  margin-top: 60px;
   padding-top: 32px;
+  margin-top: 30px;
   box-sizing: border-box;
 }
 footer .footer-middle {
@@ -318,7 +318,150 @@ footer .footer-middle p:last-child {
   text-indent: 2rem;
   color: #666666;
 }
+#public-main .public-right #publicpage {
+  text-align: center;
+}
+#public-main .public-right #publicpage a {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background-color: #f6f6f6;
+  line-height: 36px;
+}
 /* 工程案例中间主体部分 */
 #public-main .public-right .casesmain {
   padding: 35px 12px;
+}
+#public-main .public-right .casesmain .casescontent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+#public-main .public-right .casesmain .casescontent a {
+  display: block;
+  width: 248px;
+  margin-bottom: 17px;
+}
+#public-main .public-right .casesmain .casescontent a img {
+  display: block;
+  width: 100%;
+  height: 160px;
+}
+#public-main .public-right .casesmain .casescontent a:nth-child(3n-1) {
+  padding: 0 26px;
+}
+#public-main .public-right .casesmain .casescontent a span {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+}
+/* 工程案例详情页面 */
+#public-main .public-right .casesdetail {
+  padding: 35px 40px;
+}
+#public-main .public-right .casesdetail h3 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+#public-main .public-right .casesdetail img {
+  width: 743px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+#public-main .public-right .casesdetail a {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+}
+/* 新闻中心的列表页面 */
+#public-main .public-right .newsmain {
+  padding: 40px 30px;
+}
+#public-main .public-right .newsmain a {
+  width: 100%;
+  line-height: 49px;
+  display: inline-block;
+  color: #333333;
+  border-bottom: 2px dotted #f6f6f6;
+}
+#public-main .public-right .newsmain a span {
+  float: right;
+}
+/* 新闻的详情页面 */
+#public-main .public-right .newsdetail {
+  padding: 38px 36px 0 36px;
+}
+#public-main .public-right .newsdetail h3 {
+  font-size: 24px;
+  color: #333333;
+  text-align: center;
+}
+#public-main .public-right .newsdetail li {
+  text-align: center;
+  font-size: 12px;
+  line-height: 28px;
+  color: #666666;
+  margin-bottom: 10px;
+}
+#public-main .public-right .newsdetail p {
+  color: #333333;
+  line-height: 36px;
+  text-indent: 2rem;
+}
+/* 留言信息 */
+#public-main .public-right .message {
+  margin-top: 30px;
+  margin-left: 10px;
+}
+#public-main .public-right .message .top input {
+  width: 362px;
+  height: 42px;
+  background-color: #dbdbdb;
+  border: none;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  padding-left: 10px;
+  font-size: 16px;
+}
+#public-main .public-right .message .bottom h4 {
+  font-size: 16px;
+  padding: 7px;
+  border-bottom: 1px solid #666666;
+}
+#public-main .public-right .message .bottom input {
+  width: 744px;
+  height: 42px;
+  background-color: #dbdbdb;
+  border: none;
+  margin-right: 10px;
+  padding-left: 10px;
+  font-size: 16px;
+  margin-top: 10px;
+}
+#public-main .public-right .message .bottom input:last-child {
+  height: 107px;
+}
+#public-main .public-right .message .submit {
+  width: 230px;
+  height: 44px;
+  background-color: #e72e2a;
+  font-size: 16px;
+  line-height: 44px;
+  text-align: center;
+  border: none;
+  margin-top: 15px;
+}
+/* 联系信息 */
+#public-main .public-right .contact {
+  padding: 20px;
+  font-size: 14px;
+  color: #333;
+}
+#public-main .public-right .contact table tr td {
+  box-sizing: border-box;
+  height: 34px;
+}
+#public-main .public-right .contact table tr td:first-child {
+  width: 80px;
 }
